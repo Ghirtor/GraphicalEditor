@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<SplitPane fx:id="splitPane" dividerPositions="0.29797979797979796" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/9.0.4" fx:controller="sample.Controller">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <VBox layoutX="37.0" layoutY="99.0" prefHeight="398.0" prefWidth="174.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Separator prefHeight="26.0" prefWidth="174.0" />
+                  <RadioButton fx:id="selectAndMove" mnemonicParsing="false" text="Select/Move" />
+                  <Separator prefHeight="8.0" prefWidth="174.0" />
+                  <RadioButton id="ellipse" fx:id="ellipse" mnemonicParsing="false" text="Ellipse" />
+                  <Separator prefHeight="8.0" prefWidth="174.0" />
+                  <RadioButton fx:id="rectangle" mnemonicParsing="false" text="Rectangle" />
+                  <Separator prefHeight="8.0" prefWidth="174.0" />
+                  <RadioButton fx:id="line" mnemonicParsing="false" text="Line" />
+                  <Separator prefHeight="32.0" prefWidth="174.0" />
+                  <ColorPicker fx:id="colorPicker" />
+                  <Separator prefHeight="40.0" prefWidth="174.0" />
+                  <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="delete" layoutX="26.0" layoutY="41.0" mnemonicParsing="false" text="Delete" />
+                        <Button fx:id="clone" layoutX="26.0" layoutY="86.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="61.0" text="Clone" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+    <AnchorPane fx:id="drawArea" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0" />
+  </items>
+</SplitPane>
