@@ -6,7 +6,6 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-//usr/java/jdk-9.0.4/bin/java -jar scenebuilder-9.0.1-all.jar
 public class Main extends Application {
 
     @Override
